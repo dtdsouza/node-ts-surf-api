@@ -39,12 +39,14 @@
     "lint:fix": "eslint ./src ./test --ext .ts --fix",
     "format": "eslint src/**/*.ts --fix",
     "commit": "git-cz",
-    "test:functional": "jest --projects ./test --runInBand"
+    "test:functional": "jest --projects ./test --runInBand",
+    "prettier:check": "prettier --check 'src/**/*.ts' 'test/**/*.ts'",
+    "prettier:fix": "prettier --write 'src/**/*.ts' 'test/**/*.ts'"
   },
   "husky": {
     "hooks": {
-      "pre-commit": "yarn lint",
-      "pre-push": "yarn test"
+      "pre-commit": "yarn lint && yarn prettier:check",
+      "pre-push": "yarn test:functional"
     }
   },
   "config": {
