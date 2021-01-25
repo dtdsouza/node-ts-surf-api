@@ -1,0 +1,58 @@
+{
+  "hours": [
+    {
+      "swellDirection": {
+        "noaa": 158.4
+      },
+      "swellHeight": {
+        "noaa": 0.09
+      },
+      "swellPeriod": {
+        "noaa": 5.87
+      },
+      "time": "2021-01-25T00:00:00+00:00",
+      "waveDirection": {
+        "noaa": 58.55
+      },
+      "windWaveDirection": {
+        "noaa": 41.45
+      }
+    },
+    {
+      "swellDirection": {
+        "noaa": 159.99
+      },
+      "swellHeight": {
+        "noaa": 0.08
+      },
+      "swellPeriod": {
+        "noaa": 5.82
+      },
+      "time": "2021-01-25T01:00:00+00:00",
+      "waveDirection": {
+        "noaa": 60.78
+      },
+      "windWaveDirection": {
+        "noaa": 41.76
+      }
+    },
+    {
+      "swellDirection": {
+        "noaa": 161.59
+      },
+      "swellHeight": {
+        "noaa": 0.07
+      },
+      "swellPeriod": {
+        "noaa": 5.76
+      },
+      "time": "2021-01-25T02:00:00+00:00",
+      "waveDirection": {
+        "noaa": 63.01
+      },
+      "windWaveDirection": {
+        "noaa": 42.08
+      }
+    }
+  ]
+}
