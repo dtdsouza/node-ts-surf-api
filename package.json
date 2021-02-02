@@ -43,6 +43,7 @@
     "commit": "git-cz",
     "test:unit": "jest",
     "test:functional": "jest --projects ./test --runInBand",
+    "test": "yarn test:unit && yarn test:functional",
     "prettier:check": "prettier --check 'src/**/*.ts' 'test/**/*.ts'",
     "prettier:fix": "prettier --write 'src/**/*.ts' 'test/**/*.ts'"
   },
