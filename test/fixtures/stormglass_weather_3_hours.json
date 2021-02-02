@@ -2,56 +2,74 @@
   "hours": [
     {
       "swellDirection": {
-        "noaa": 158.4
+        "noaa": 196.23
       },
       "swellHeight": {
-        "noaa": 0.09
+        "noaa": 0.41
       },
       "swellPeriod": {
-        "noaa": 5.87
+        "noaa": 4.3
       },
-      "time": "2021-01-25T00:00:00+00:00",
+      "time": "2021-02-02T00:00:00+00:00",
       "waveDirection": {
-        "noaa": 58.55
+        "noaa": 194.75
       },
-      "windWaveDirection": {
-        "noaa": 41.45
+      "waveHeight": {
+        "noaa": 0.58
+      },
+      "windDirection": {
+        "noaa": 53.34
+      },
+      "windSpeed": {
+        "noaa": 2.23
       }
     },
     {
       "swellDirection": {
-        "noaa": 159.99
+        "noaa": 196.12
       },
       "swellHeight": {
-        "noaa": 0.08
+        "noaa": 0.43
       },
       "swellPeriod": {
-        "noaa": 5.82
+        "noaa": 4.41
       },
-      "time": "2021-01-25T01:00:00+00:00",
+      "time": "2021-02-02T01:00:00+00:00",
       "waveDirection": {
-        "noaa": 60.78
+        "noaa": 193.45
       },
-      "windWaveDirection": {
-        "noaa": 41.76
+      "waveHeight": {
+        "noaa": 0.56
+      },
+      "windDirection": {
+        "noaa": 59.84
+      },
+      "windSpeed": {
+        "noaa": 2.32
       }
     },
     {
       "swellDirection": {
-        "noaa": 161.59
+        "noaa": 196.01
       },
       "swellHeight": {
-        "noaa": 0.07
+        "noaa": 0.45
       },
       "swellPeriod": {
-        "noaa": 5.76
+        "noaa": 4.52
       },
-      "time": "2021-01-25T02:00:00+00:00",
+      "time": "2021-02-02T02:00:00+00:00",
       "waveDirection": {
-        "noaa": 63.01
+        "noaa": 192.15
       },
-      "windWaveDirection": {
-        "noaa": 42.08
+      "waveHeight": {
+        "noaa": 0.53
+      },
+      "windDirection": {
+        "noaa": 66.33
+      },
+      "windSpeed": {
+        "noaa": 2.4
       }
     }
   ]
