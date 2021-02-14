@@ -54,7 +54,7 @@
   "husky": {
     "hooks": {
       "pre-commit": "yarn lint && yarn prettier:check",
-      "pre-push": "yarn test:functional"
+      "pre-push": "yarn test"
     }
   },
   "config": {
