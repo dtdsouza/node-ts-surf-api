@@ -1,17 +1,19 @@
 import { Controller, Post } from '@overnightjs/core';
 import { User } from '@src/models/user';
 import { Request, Response } from 'express';
+import { BaseController } from '.';
 
 @Controller('users')
-export class UsersController {
+export class UsersController extends BaseController {
   @Post('')
   public async createUser(req: Request, res: Response): Promise<void> {
     try {
-      const newUser = await new User(req.body);
+      const user = new User(req.body);
+      const newUser = await user.save();
 
       res.status(201).send(newUser);
     } catch (error) {
-      res.status(500).send('Something went wrong');
+      this.sendCreateUpdateErrorResponse(res, error);
     }
   }
 }
