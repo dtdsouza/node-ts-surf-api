@@ -8,6 +8,10 @@
       "key": "some-key",
       "tokenExpiresIn": "1000000"
     },
+    "logger": {
+      "enabled": true,
+      "level": "info"
+    },
     "resources": {
       "StormGlass": {
         "apiUrl": "https://api.stormglass.io/v2",
