@@ -41,9 +41,12 @@ describe('Beaches functional tests', () => {
       const response = await global.testRequest.post('/beaches').set({ 'x-access-token': token }).send(newBeach);
       expect(response.status).toEqual(422);
       expect(response.body).toEqual({
-        error: 'Beach validation failed: lat: Cast to Number failed for value "invalid string" at path "lat"',
+        code: 422,
+        error: 'Unprocessable Entity',
+        message: 'Beach validation failed: lat: Cast to Number failed for value "invalid string" at path "lat"',
       });
     });
+
     it('Should return 500 when database connection has an error', async () => {
       const newBeach = {
         lat: -33.792726,
@@ -57,7 +60,9 @@ describe('Beaches functional tests', () => {
       const response = await global.testRequest.post('/beaches').set({ 'x-access-token': token }).send(newBeach);
       expect(response.status).toEqual(500);
       expect(response.body).toEqual({
+        code: 500,
         error: 'Internal Server Error',
+        message: 'Something went wrong',
       });
     });
   });
