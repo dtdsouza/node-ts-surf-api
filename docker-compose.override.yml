@@ -1,0 +1,31 @@
+version: '3'
+
+services:
+  server:
+    container_name: FINDING_WAVES_CORE
+    build:
+      context: .
+      dockerfile: Dockerfile.dev
+    restart: always
+    volumes:
+      - ./:/node-app
+      - ./node_modules:/node-app/node_modules
+    environment:
+      APP_PORT: 8080
+      MONGODB_URL: mongodb://db:27017/surf-forecast
+      NODE_ENV: development
+
+    depends_on:
+      - db
+    links:
+      - db
+    ports:
+      - '8080:8080'
+
+  db:
+    image: 'mongo'
+    container_name: FINDING_WAVES_DB
+    ports:
+      - '27017:27017'
+    volumes:
+      - ./data/db:/data/db
